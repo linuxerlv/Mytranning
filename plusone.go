@@ -1,11 +1,11 @@
 func plusOne(digits []int) []int {
-    len := len(digits) -1 
+    lenth := len(digits) -1 
     
     if len == 0 {  //检测是否是空数组
         return []int{1}
     }
 
-    for i := len; len >= 0; i-- {   //逐个入栈
+    for i := lenth; i >= 0; i-- {   //逐个入栈
         if(digits[i] < 10) {    // 过滤掉小于10的情况
             digits[i]++
             return digits
